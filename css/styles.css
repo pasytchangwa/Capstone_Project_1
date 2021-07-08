@@ -304,6 +304,11 @@ img {
   background-color: rgba(214, 214, 210, 0.3);
 }
 
+.program:hover {
+  border: 1px solid white;
+  transition: var(--mainTransition);
+}
+
 .program-img > .material-icons {
   font-size: 3rem;
   background-color: transparent;
