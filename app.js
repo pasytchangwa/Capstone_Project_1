@@ -3,11 +3,11 @@ const openNav = document.querySelector('.open-nav');
 const closeNav = document.querySelector('#close-btn');
 const getSidebar = document.querySelector('#sidebar');
 // show sidebar
-openNav.addEventListener('click', function () {
-  sidebar.classList.add('show-sidebar');
+openNav.addEventListener('click', () => {
+  getSidebar.classList.add('show-sidebar');
 });
-closeNav.addEventListener('click', function () {
-  sidebar.classList.remove('show-sidebar');
+closeNav.addEventListener('click', () => {
+  getSidebar.classList.remove('show-sidebar');
 });
 
 // DYNANMIC SECTION :Creating the speaker object
@@ -62,6 +62,13 @@ const aboutSpeaker5 = document.createElement('p');
 aboutSpeaker5.innerHTML = 'met consectetur adipisicin. Porro impedit, aliquid quaerat consequuntur quis hic ad';
 const aboutSpeaker6 = document.createElement('p');
 aboutSpeaker6.innerHTML = 'amet consectetur adipisicing elit. Porro impedit, aliquid quaerat consequuntur quis';
+
+let speaker1 = {};
+let speaker2 = {};
+let speaker3 = {};
+let speaker4 = {};
+let speaker5 = {};
+let speaker6 = {};
 
 const speakers = [
   (speaker1 = {
@@ -147,7 +154,7 @@ window.addEventListener('load', () => {
     hidePartner.style.display = 'none';
     hideFooter.style.display = 'none';
     allSpeakers.appendChild(showMore);
-    chevron.addEventListener('click', function () {
+    chevron.addEventListener('click', () => {
       moreItems.style.display = 'grid';
       hidePartner.style.display = 'flex';
       hideFooter.style.display = 'flex';
@@ -165,71 +172,46 @@ window.addEventListener('load', () => {
   for (let i = 0; i < speakerSection.length; i += 1) {
     if (speakerSection[i].classList.contains('speaker1')) {
       speakerSection[i] = speaker1;
-      speakerSection[i].firstElementChild.firstElementChild.src =
-        speakers[i].Image;
-      speakerSection[i].lastElementChild.children[0].innerHTML =
-        speakers[i].Name;
-      speakerSection[i].lastElementChild.children[1].innerHTML =
-        speakers[i].Title;
-      speakerSection[i].lastElementChild.children[3].innerHTML =
-        speakers[i].About;
+      speakerSection[i].firstElementChild.firstElementChild.src = speakers[i].Image;
+      speakerSection[i].lastElementChild.children[0].innerHTML = speakers[i].Name;
+      speakerSection[i].lastElementChild.children[1].innerHTML = speakers[i].Title;
+      speakerSection[i].lastElementChild.children[3].innerHTML = speakers[i].About;
     }
     if (speakerSection[i].classList.contains('speaker2')) {
       speakerSection[i] = speaker2;
-      speakerSection[i].firstElementChild.firstElementChild.src =
-        speakers[i].Image;
-      speakerSection[i].lastElementChild.children[0].innerHTML =
-        speakers[i].Name;
-      speakerSection[i].lastElementChild.children[1].innerHTML =
-        speakers[i].Title;
-      speakerSection[i].lastElementChild.children[3].innerHTML =
-        speakers[i].About;
+      speakerSection[i].firstElementChild.firstElementChild.src = speakers[i].Image;
+      speakerSection[i].lastElementChild.children[0].innerHTML = speakers[i].Name;
+      speakerSection[i].lastElementChild.children[1].innerHTML = speakers[i].Title;
+      speakerSection[i].lastElementChild.children[3].innerHTML = speakers[i].About;
     }
     if (speakerSection[i].classList.contains('speaker3')) {
       speakerSection[i] = speaker3;
-      speakerSection[i].firstElementChild.firstElementChild.src =
-        speakers[i].Image;
-      speakerSection[i].lastElementChild.children[0].innerHTML =
-        speakers[i].Name;
-      speakerSection[i].lastElementChild.children[1].innerHTML =
-        speakers[i].Title;
-      speakerSection[i].lastElementChild.children[3].innerHTML =
-        speakers[i].About;
+      speakerSection[i].firstElementChild.firstElementChild.src = speakers[i].Image;
+      speakerSection[i].lastElementChild.children[0].innerHTML = speakers[i].Name;
+      speakerSection[i].lastElementChild.children[1].innerHTML = speakers[i].Title;
+      speakerSection[i].lastElementChild.children[3].innerHTML = speakers[i].About;
     }
     if (speakerSection[i].classList.contains('speaker4')) {
       speakerSection[i] = speaker4;
-      speakerSection[i].firstElementChild.firstElementChild.src =
-        speakers[i].Image;
-      speakerSection[i].lastElementChild.children[0].innerHTML =
-        speakers[i].Name;
-      speakerSection[i].lastElementChild.children[1].innerHTML =
-        speakers[i].Title;
-      speakerSection[i].lastElementChild.children[3].innerHTML =
-        speakers[i].About;
+      speakerSection[i].firstElementChild.firstElementChild.src = speakers[i].Image;
+      speakerSection[i].lastElementChild.children[0].innerHTML = speakers[i].Name;
+      speakerSection[i].lastElementChild.children[1].innerHTML = speakers[i].Title;
+      speakerSection[i].lastElementChild.children[3].innerHTML = speakers[i].About;
     }
     if (speakerSection[i].classList.contains('speaker5')) {
       speakerSection[i] = speaker5;
-      speakerSection[i].firstElementChild.firstElementChild.src =
-        speakers[i].Image;
-      speakerSection[i].lastElementChild.children[0].innerHTML =
-        speakers[i].Name;
-      speakerSection[i].lastElementChild.children[1].innerHTML =
-        speakers[i].Title;
-      speakerSection[i].lastElementChild.children[3].innerHTML =
-        speakers[i].About;
+      speakerSection[i].firstElementChild.firstElementChild.src = speakers[i].Image;
+      speakerSection[i].lastElementChild.children[0].innerHTML = speakers[i].Name;
+      speakerSection[i].lastElementChild.children[1].innerHTML = speakers[i].Title;
+      speakerSection[i].lastElementChild.children[3].innerHTML = speakers[i].About;
     } else if (speakerSection[i].classList.contains('speaker6')) {
       speakerSection[i] = speaker6;
-      speakerSection[i].firstElementChild.firstElementChild.src =
-        speakers[i].Image;
-      speakerSection[i].lastElementChild.children[0].innerHTML =
-        speakers[i].Name;
-      speakerSection[i].lastElementChild.children[1].innerHTML =
-        speakers[i].Title;
-      speakerSection[i].lastElementChild.children[3].innerHTML =
-        speakers[i].About;
+      speakerSection[i].firstElementChild.firstElementChild.src = speakers[i].Image;
+      speakerSection[i].lastElementChild.children[0].innerHTML = speakers[i].Name;
+      speakerSection[i].lastElementChild.children[1].innerHTML = speakers[i].Title;
+      speakerSection[i].lastElementChild.children[3].innerHTML = speakers[i].About;
     }
   }
 });
 
 // Display more speakers and partners in home page
-
