@@ -138,7 +138,6 @@ img {
   color: var(--secondaryColor);
   font-weight: 700;
   position: fixed;
-  z-index: 900;
 }
 
 .headline {
