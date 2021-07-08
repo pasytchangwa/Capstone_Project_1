@@ -12,17 +12,17 @@ closeNav.addEventListener('click', () => {
 
 // DYNANMIC SECTION :Creating the speaker object
 const image1 = document.createElement('img');
-image1.src = '../assets/image-main/picture1.jpg';
+image1.src = './assets/image-main/picture1.jpg';
 const image2 = document.createElement('img');
-image2.src = '../assets/image-main/picture2.jpg';
+image2.src = './assets/image-main/picture2.jpg';
 const image3 = document.createElement('img');
-image3.src = '../assets/image-main/picture3.jpg';
+image3.src = './assets/image-main/picture3.jpg';
 const image4 = document.createElement('img');
-image4.src = '../assets/image-main/picture4.jpg';
+image4.src = './assets/image-main/picture4.jpg';
 const image5 = document.createElement('img');
-image5.src = '../assets/image-main/picture5.png';
+image5.src = './assets/image-main/picture5.png';
 const image6 = document.createElement('img');
-image6.src = '../assets/image-main/picture6.jpg';
+image6.src = './assets/image-main/picture6.jpg';
 // create speaker name
 const speakerName1 = document.createElement('p');
 speakerName1.innerHTML = 'Max Chuard, Temenos';
