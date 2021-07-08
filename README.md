@@ -4,7 +4,7 @@
 
 ## Project online link
 
-[CLICK HERE]() for the online version
+[CLICK HERE](https://pasytchangwa.github.io/Capstone_Project_1/) for the online version
 
 - **This project aimed at setting up a conference website (home page and about page) in mobile and desktop versions (<768px and >= 768px) and the following objectives were expected**:
 

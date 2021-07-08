@@ -451,7 +451,7 @@ img {
   height: 100%;
 }
 
-.aboutmain-header {
+.about-program-section .aboutmain-header {
   text-transform: capitalize;
   font-size: 25px;
   color: var(--secondaryColor);
@@ -501,7 +501,7 @@ img {
   padding-top: 40px;
 }
 
-.aboutmain-header {
+.about-speakers-section .aboutmain-header {
   text-transform: capitalize;
   font-size: 25px;
   color: #272a31;
