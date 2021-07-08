@@ -304,7 +304,7 @@ img {
   background-color: rgba(214, 214, 210, 0.3);
 }
 
-.program > .material-icons {
+.program-img > .material-icons {
   font-size: 3rem;
   background-color: transparent;
   border: none;
@@ -496,7 +496,7 @@ img {
   padding-top: 40px;
 }
 
-.about-speakers-section .aboutmain-header {
+.aboutmain-header {
   text-transform: capitalize;
   font-size: 25px;
   color: #272a31;
@@ -779,6 +779,14 @@ footer .logo {
     font-weight: 700;
   }
 
+  .facebook-link > .material-icons,
+  .twitter-link > .material-icons {
+    font-size: 15px;
+    line-height: 0.7rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
   .lower-nav {
     display: flex;
     height: 4rem;
@@ -825,7 +833,8 @@ footer .logo {
   .campaign-link {
     color: var(--primaryColor);
     font-weight: 700;
-    font-size: 12px;
+    font-size: 16px;
+    text-transform: capitalize;
   }
 
   .headline {
@@ -967,8 +976,13 @@ footer .logo {
   }
 
   .partner {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .ico {
+    width: 9rem;
+    align-self: center;
   }
 
   .partner1 {
