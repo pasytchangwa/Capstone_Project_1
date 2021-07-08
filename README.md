@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project online link
+# Capstone_1 Project: Chemistry-Conference
+
+## Project online link
 
 [CLICK HERE]() for the online version
 
-# Capstone_1 Project: Chemistry-Conference
-
-> This project aimed at setting up a conference website (home page and about page) in mobile and desktop versions (<768px and >= 768px) and the following objectives were expected:
+- **This project aimed at setting up a conference website (home page and about page) in mobile and desktop versions (<768px and >= 768px) and the following objectives were expected**:
 
 - Use semantic HTML tags.
 - Apply best practices in HTML code.
