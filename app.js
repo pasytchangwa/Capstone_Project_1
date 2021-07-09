@@ -10,6 +10,15 @@ closeNav.addEventListener('click', () => {
   getSidebar.classList.remove('show-sidebar');
 });
 
+// Change mobile version nav backround color
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    openNav.classList.add('change-bg');
+  } else {
+    openNav.classList.remove('change-bg');
+  }
+});
+
 // DYNANMIC SECTION :Creating the speaker object
 const image1 = document.createElement('img');
 image1.src = './assets/image-main/picture1.jpg';

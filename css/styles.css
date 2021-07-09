@@ -104,7 +104,6 @@ img {
 
 /* End Mobile Menu */
 .header-section {
-  margin: 0;
   padding-bottom: 70px;
   background-color: #e9e9e9;
   background-image: linear-gradient(rgba(203, 205, 205, 0.3), rgb(220, 224, 220)), url('../assets/image-header/newheadbg.jpg');
@@ -124,20 +123,29 @@ img {
 
 .open-nav {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  height: 50px;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
   padding: 0 28px;
   margin-top: 0.7rem;
+  position: fixed;
+  top: -12px;
+  left: 0;
+  z-index: 4;
+}
+
+.change-bg {
+  background-color: var(--forthColor);
+  z-index: 4;
+  transition: var(--mainTransition);
 }
 
 .open-nav .material-icons {
   font-size: 48px;
   color: var(--secondaryColor);
   font-weight: 700;
-  position: fixed;
 }
 
 .headline {
@@ -149,7 +157,7 @@ img {
 }
 
 .headers {
-  margin-top: 40px;
+  margin-top: 95px;
   color: var(--primaryColor);
   width: 100%;
 }
@@ -849,7 +857,6 @@ footer .logo {
   }
 
   .headers {
-    margin-top: 40px;
     color: var(--primaryColor);
     width: 100%;
   }
